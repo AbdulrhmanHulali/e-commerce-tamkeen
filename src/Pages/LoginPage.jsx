@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { Link, useNavigate } from "react-router";
 import { FiLock, FiPhone, FiStar, FiHeart, FiSmile } from "react-icons/fi";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 
 import "../styles/register.css";
 

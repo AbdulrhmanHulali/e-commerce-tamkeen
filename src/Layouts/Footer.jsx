@@ -10,7 +10,7 @@ import {
   FaGooglePlay,
 } from "react-icons/fa";
 import { AppContext } from "../Contexts/AppContext";
-import { Link } from "react-router"; // تم تصحيح الاستيراد ليكون react-router-dom إذا لزم الأمر أو تركه كما هو في مشروعك
+import { Link } from "react-router"; 
 import logo from "../assets/images/logo.svg";
 import "./footer.css";
 

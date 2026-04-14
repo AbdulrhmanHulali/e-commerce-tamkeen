@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import { AppContext } from "../Contexts/AppContext";
 
 export default function useProductDetails(id) {
@@ -15,7 +15,6 @@ export default function useProductDetails(id) {
     const productsUrl = `${api_config.BASE_URL}${api_config.ENDPOINTS.PRODUCTS}`;
 
     Promise.all([
-      // 1. جلب تفاصيل المنتج
       fetch(url, {
         method: "GET",
         headers: {
@@ -25,10 +24,8 @@ export default function useProductDetails(id) {
         },
       }).then((res) => (res.ok ? res.json() : null)),
       
-      // 2. جلب الداتا الوهمية (للاحتفاظ ببيانات الـ tabs مؤقتاً إذا لم تكن في الـ API)
       fetch("/data/mockdata.json").then((res) => (res.ok ? res.json() : null)),
 
-      // 3. جلب جميع المنتجات لاستخدامها كـ "منتجات ذات صلة"
       fetch(productsUrl, {
         method: "GET",
         headers: {
@@ -42,7 +39,6 @@ export default function useProductDetails(id) {
           const apiData = apiResult.data;
           const mockTabs = mockData?.productDetailsData?.tabsData || {};
 
-          // معالجة المنتجات ذات الصلة (نستبعد المنتج المعروض حالياً ونأخذ 6 منتجات)
           let apiRelatedProducts = [];
           if (productsResult && productsResult.code === 1 && productsResult.data) {
             apiRelatedProducts = productsResult.data
@@ -52,7 +48,7 @@ export default function useProductDetails(id) {
 
           const mappedProduct = {
             id: apiData.id,
-            title: apiData.name || apiData.title, // أخذ الاسم
+            title: apiData.name || apiData.title, 
             price: apiData.price,
             images:
               apiData.images && apiData.images.length > 0
@@ -85,7 +81,6 @@ export default function useProductDetails(id) {
             supplier: mockData?.productDetailsData?.supplier,
             is_favorite: apiData.is_favorite || false,
             
-            // تعيين البيانات القادمة من الـ API بدلاً من الموك داتا
             relatedProducts: apiRelatedProducts,
 
             colors: apiData.colors || [],

@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { useParams, Link, useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import CategoryItemCard from "../Components/CategoryItemCard";
 
 import "../styles/categoryDetailsPage.css";

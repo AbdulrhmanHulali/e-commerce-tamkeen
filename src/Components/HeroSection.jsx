@@ -4,7 +4,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import "../styles/heroSection.css";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import fallbackImage from "../assets/images/latest-trending.png";
 
 export default function HeroSection() {

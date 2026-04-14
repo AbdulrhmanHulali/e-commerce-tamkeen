@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { Link, useLocation } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import { FiCreditCard, FiCheckCircle, FiPackage } from "react-icons/fi";
 
 import AOS from "aos";

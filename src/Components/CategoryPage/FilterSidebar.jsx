@@ -1,6 +1,6 @@
 import { Collapse, Form, Button } from "react-bootstrap";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
-import { useSearchParams } from "react-router"; // 💡 نستخدم هذه للتعامل مع الرابط
+import { useSearchParams } from "react-router";
 
 const FilterCollapse = ({ title, isOpen, onToggle, children }) => (
   <div className="filter-section">
@@ -22,7 +22,6 @@ const FilterCollapse = ({ title, isOpen, onToggle, children }) => (
 );
 
 export default function FilterSidebar({ pageState }) {
-  // 💡 استخراج الفلاتر الحالية وتوفير دالة لتحديثها
   const [searchParams, setSearchParams] = useSearchParams();
   const currentCategoryId = searchParams.get("category_id");
 
@@ -34,54 +33,46 @@ export default function FilterSidebar({ pageState }) {
     minPercent,
     maxPercent,
     maxLimit,
-    applyPriceFilter, // هذي الدالة حدثناها بالهوك لكي تحافظ على كل الفلاتر
+    applyPriceFilter,
     handleMinPriceChange,
     handleMaxPriceChange,
     toggleFilterSection,
   } = pageState;
 
-  // ==========================================
-  // 💡 دالة سحرية لتغيير القسم مع الاحتفاظ بـ (Search, Sort, Price)
-  // ==========================================
   const handleCategorySelect = (catId) => {
     if (Number(currentCategoryId) === catId) return;
 
-    // 1. نأخذ نسخة من كل الفلاتر الموجودة حالياً في الرابط
     const newParams = new URLSearchParams(searchParams);
 
-    // 2. نعدل فقط على الـ category_id
     if (catId) {
       newParams.set("category_id", catId);
     } else {
-      newParams.delete("category_id"); // في حال ضغط على All Categories
+      newParams.delete("category_id");
     }
 
-    // 3. نحدث الرابط (مما سيُشغل الهوك تلقائياً لجلب البيانات من الـ API بالتشكيلة الجديدة)
     setSearchParams(newParams);
   };
 
   return (
     <div className="filter-sidebar text-start">
-      {/* ========================================== */}
-      {/* 1. فلتر التصنيفات (Category)               */}
-      {/* ========================================== */}
+
       <FilterCollapse
         title="Category"
         isOpen={openFilters.category}
         onToggle={() => toggleFilterSection("category")}
       >
         <ul className="list-unstyled mb-0 filter-list">
-          {/* خيار عرض كل المنتجات */}
           <li
-             className={`mb-2 cursor-pointer filter-category-item ${!currentCategoryId ? "fw-bold text-accent" : ""}`}
-             onClick={() => handleCategorySelect(null)}
-             style={{ transition: "0.3s" }}
-             onMouseOver={(e) => {
-               if (currentCategoryId) e.target.style.color = "var(--accent-color)";
-             }}
-             onMouseOut={(e) => {
-               if (currentCategoryId) e.target.style.color = "";
-             }}
+            className={`mb-2 cursor-pointer filter-category-item ${!currentCategoryId ? "fw-bold text-accent" : ""}`}
+            onClick={() => handleCategorySelect(null)}
+            style={{ transition: "0.3s" }}
+            onMouseOver={(e) => {
+              if (currentCategoryId)
+                e.target.style.color = "var(--accent-color)";
+            }}
+            onMouseOut={(e) => {
+              if (currentCategoryId) e.target.style.color = "";
+            }}
           >
             All Categories
           </li>
@@ -91,14 +82,15 @@ export default function FilterSidebar({ pageState }) {
               <li
                 key={cat.id}
                 className={`mb-2 cursor-pointer filter-category-item ${Number(currentCategoryId) === cat.id ? "fw-bold text-accent" : ""}`}
-                onClick={() => handleCategorySelect(cat.id)} // 💡 استدعاء الدالة الآمنة
+                onClick={() => handleCategorySelect(cat.id)}
                 style={{ transition: "0.3s" }}
                 onMouseOver={(e) => {
                   if (Number(currentCategoryId) !== cat.id)
                     e.target.style.color = "var(--accent-color)";
                 }}
                 onMouseOut={(e) => {
-                  if (Number(currentCategoryId) !== cat.id) e.target.style.color = "";
+                  if (Number(currentCategoryId) !== cat.id)
+                    e.target.style.color = "";
                 }}
               >
                 {cat.name}
@@ -110,9 +102,6 @@ export default function FilterSidebar({ pageState }) {
         </ul>
       </FilterCollapse>
 
-      {/* ========================================== */}
-      {/* 2. فلتر السعر (Price range)                */}
-      {/* ========================================== */}
       <FilterCollapse
         title="Price range"
         isOpen={openFilters.price}

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router";
 import { FiCheckCircle } from "react-icons/fi";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import { AppContext } from "../Contexts/AppContext";
 import "../styles/register.css";
 

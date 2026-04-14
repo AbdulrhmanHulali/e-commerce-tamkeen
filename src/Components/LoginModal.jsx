@@ -20,7 +20,6 @@ export default function LoginModal() {
       centered
       contentClassName="bg-transparent border-0"
     >
-      {/* 2. استخدام الكلاسات بدلاً من الـ inline styles */}
       <div className="custom-modal-content shadow-lg">
         <Modal.Header
           closeButton

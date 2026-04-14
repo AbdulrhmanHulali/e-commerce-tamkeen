@@ -53,7 +53,6 @@ export default function TopControlBar({ pageState }) {
   return (
     <>
       <div className="top-control-bar mb-3">
-        {/* تصميم الشاشات الكبيرة (الديسكتوب) */}
         <div className="d-none d-md-flex justify-content-between align-items-center">
           <div className="text-start">
             {totalItems} items in{" "}
@@ -89,10 +88,7 @@ export default function TopControlBar({ pageState }) {
           </div>
         </div>
 
-        {/* تصميم شاشات الموبايل */}
         <div className="d-block d-md-none mobile-specific-layout">
-          {/* تم إزالة مربع البحث الخاص بالموبايل من هنا */}
-
           <div className="mobile-filter-sort-bar d-flex justify-content-between align-items-center mt-2">
             <div className="d-flex gap-2 flex-grow-1">
               <Dropdown onSelect={handleSortChange}>

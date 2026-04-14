@@ -4,7 +4,6 @@ import { useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
 export default function CategoryItemCard({id, title, price, image }) {
   const navigate = useNavigate();
-  // تعريف تابع تغيير السعر حسب العملة
   const {formatPrice} = useContext(AppContext)
   const handleClick = () => {
     navigate(`/category/${id}`);
@@ -17,7 +16,6 @@ export default function CategoryItemCard({id, title, price, image }) {
         </div>
         <div className="category-item-price">
           <span>From</span> <br />
-          {/* استدعاء تابع تغغير العملة */}
           <span> {formatPrice(price)}</span>
         </div>
       </div>

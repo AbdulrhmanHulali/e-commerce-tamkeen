@@ -10,7 +10,6 @@ export default function CartItemCard({
   isSelected,
   onToggleSelect,
 }) {
-  // تعريف تابع تغيير السعر حسب العملة
   const { addToFavorites, isFavorite,removeFromFavorites, formatPrice } = useContext(AppContext);
   const isFav = isFavorite(item.id);
 
@@ -50,12 +49,10 @@ export default function CartItemCard({
           </div>
           <div className="text-md-end text-start flex-shrink-0 mt-2 mt-md-0">
             <div className="fw-bold text-main-theme mb-1 cart-item-price-total">
-              {/* استدعاء تابع تغيير العملة */}
               {formatPrice(item.price * item.quantity)}
             </div>
             <div className="text-muted-theme cart-item-price-unit">
               {" "}
-              {/* استدعاء تابع تغيير العملة */}
               {formatPrice(item.price)} / pc
             </div>
           </div>

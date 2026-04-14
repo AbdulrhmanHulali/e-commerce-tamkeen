@@ -17,7 +17,7 @@ import {
   FaBoxOpen,
 } from "react-icons/fa";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 
 export default function ManageProducts() {
   const { lang, formatPrice } = useContext(AppContext);

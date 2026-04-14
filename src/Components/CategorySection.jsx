@@ -6,7 +6,7 @@ import "swiper/css";
 import CategoryItemCard from "./CategoryItemCard";
 import "../styles/categorySection.css";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 
 import fallbackBanner1 from "../assets/images/home-and-outdoor.png";
 import fallbackBanner2 from "../assets/images/consumer.png";

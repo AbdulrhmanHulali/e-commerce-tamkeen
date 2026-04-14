@@ -13,7 +13,7 @@ import {
 import { useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
 import RecommendedSection from "../Components/RecommendedSection";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import "../styles/favorites.css";
 
 const FavoritesPage = () => {

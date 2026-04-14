@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Col, Card, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../Config/api";
+import { api_config } from "../../Config/API"; 
 import { FaImage, FaChevronRight } from "react-icons/fa";
 
 import "../styles/allcategory.css";
