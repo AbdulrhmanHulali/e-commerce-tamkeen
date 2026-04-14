@@ -1,0 +1,229 @@
+.orders-page-wrapper {
+  background-color: var(--section-bg) !important;
+  min-height: 100vh;
+  text-align: start !important;
+}
+
+.orders-page-wrapper .order-item-card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.orders-page-wrapper .order-item-card:hover {
+  border-color: var(--accent-color) !important;
+  transform: translateY(-4px);
+}
+.orders-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.orders-back-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.order-filter-btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--main-text);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.order-filter-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.order-filter-btn.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff !important;
+}
+
+.empty-orders-state {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  border: 2px dashed var(--border-color);
+  padding: 4rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.empty-orders-state:hover {
+  border-color: var(--accent-color);
+  background-color: var(--section-bg);
+}
+.orders-back-btn:hover {
+  color: var(--accent-color);
+  transform: translateX(-4px);
+}
+[dir="rtl"] .orders-back-icon {
+  transform: scaleX(-1);
+  rotate: 180deg;
+}
+[dir="rtl"] .orders-back-btn:hover {
+  transform: translateX(4px);
+}
+
+.order-card-header {
+  background-color: transparent !important;
+}
+.order-icon-wrapper {
+  background-color: rgba(232, 62, 140, 0.1);
+  color: var(--accent-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.status-delivered {
+  background-color: rgba(40, 167, 69, 0.1) !important;
+  color: #28a745 !important;
+}
+.status-processing {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+  color: #d39e00 !important;
+}
+[data-theme="dark"] .status-processing {
+  color: #ffc107 !important;
+}
+.status-cancelled {
+  background-color: var(--danger-bg) !important;
+  color: var(--danger-text) !important;
+}
+.status-default {
+  background-color: var(--border-color) !important;
+  color: var(--main-text) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+.btn-outline-accent {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  background-color: transparent;
+}
+.btn-outline-accent:hover {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+.orders-page-wrapper h1,
+.orders-page-wrapper h5,
+.orders-page-wrapper h6,
+.orders-page-wrapper p.text-main-theme {
+  color: var(--main-text) !important;
+}
+.orders-page-wrapper p.text-muted,
+.orders-page-wrapper small.text-muted {
+  color: var(--main-text) !important;
+  opacity: 0.75;
+}
+
+.order-items-preview-text {
+  max-width: 250px;
+}
+
+.order-cancel-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.empty-state-shop-btn {
+  background-color: var(--accent-color) !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.empty-state-shop-btn:hover {
+  background-color: var(--color-primary-darker) !important;
+}
+
+
+.custom-cancel-modal .custom-input {
+  background-color: var(--input-bg) !important;
+  color: var(--main-text) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.custom-cancel-modal .custom-input:focus {
+  border-color: var(--accent-color) !important;
+}
+
+.custom-cancel-modal .modal-content {
+  background-color: var(--card-bg) !important;
+  color: var(--main-text) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px;
+}
+
+.custom-cancel-modal .modal-header {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.custom-cancel-modal .modal-footer {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+.custom-cancel-modal .btn-close {
+  filter: var(--close-btn-filter) !important;
+}
+
+.custom-cancel-modal .modal-title {
+  color: var(--main-text) !important;
+}
+
+.custom-cancel-modal .cancel-order-id {
+  color: var(--accent-color);
+}
+
+.custom-cancel-modal .form-label {
+  color: var(--main-text);
+  opacity: 0.9;
+}
+
+.cancel-warning-box {
+  background-color: var(--danger-bg);
+  border: 1px solid var(--border-color);
+  color: var(--danger-text);
+}
+
+.btn-cancel-confirm:disabled {
+  cursor: not-allowed !important;
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  opacity: 0.6;
+  pointer-events: auto !important;
+}
+
+.btn-cancel-confirm {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .orders-back-btn {
+    display: none !important;
+  }
+  .orders-header-section h1 {
+    font-size: 2rem;
+  }
+}

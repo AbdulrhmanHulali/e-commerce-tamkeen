@@ -1,0 +1,77 @@
+.quote-banner {
+  background-image:
+    url("../assets/images/linear-pink.png"),
+    url("../assets/images/send-quote-to-supplieres.png");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.quote-form-card {
+  background-color: var(--card-bg);
+  color: var(--main-text);
+  border: 1px solid var(--border-color);
+}
+.quote-form-card textarea.form-control {
+  min-height: 120px;
+}
+.quote-form-card .form-control,
+.quote-form-card .form-select {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1rem !important;
+  font-size: 1.05rem !important;
+}
+
+.quote-form-card .form-control:focus,
+.quote-form-card .form-select:focus {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  border-color: var(--accent-color);
+}
+
+.quote-form-card .form-control::placeholder {
+  color: var(--muted-text);
+  font-size: 14px;
+}
+
+.quote-title {
+  max-width: 450px;
+}
+
+.quote-subtitle {
+  max-width: 400px;
+  font-size: 15px;
+}
+
+.custom-submit-btn.btn {
+  background: var(--accent-color);
+  border: none;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  margin-inline-start: auto;
+}
+
+.custom-submit-btn.btn:hover {
+  opacity: 0.9;
+  color: #ffffff;
+  background-color: var(--hero-teal-card);
+}
+
+.custom-submit-btn.btn:disabled {
+  background: var(--muted-text);
+  color: #ffffff;
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+html[data-theme="dark"] .quote-form-card .form-control::placeholder {
+  color: white !important;
+  opacity: 1;
+}

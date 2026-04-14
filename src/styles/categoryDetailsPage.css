@@ -1,0 +1,30 @@
+.category-details-page {
+  background-color: var(--main-bg);
+  min-height: 80vh;
+}
+
+.simple-category-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  display: block;
+}
+
+.simple-category-card:hover {
+  border-color: var(--accent-color);
+  box-shadow: var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+.custom-primary-btn {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: #fff !important;
+}
+
+.custom-primary-btn:hover {
+  background-color: var(--color-primary-darker) !important;
+  border-color: var(--color-primary-darker) !important;
+}

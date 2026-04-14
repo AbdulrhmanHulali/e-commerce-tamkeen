@@ -1,0 +1,127 @@
+.about-page {
+  background-color: var(--section-bg) !important;
+  min-height: 100vh;
+  color: var(--main-text);
+}
+
+.text-main-theme {
+  color: var(--main-text) !important;
+}
+
+.text-muted {
+  color: var(--muted-text) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.line-height-lg {
+  line-height: 1.8;
+}
+
+.about-image-wrapper {
+  overflow: hidden;
+}
+
+.about-hero-img {
+  transition: transform 0.6s ease-in-out;
+}
+
+.about-image-wrapper:hover .about-hero-img {
+  transform: scale(1.08);
+}
+
+.stat-box {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.stat-box:hover {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-5px);
+}
+
+.about-page .value-card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 12px !important;
+  border-bottom: 4px solid transparent !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.about-page .value-card:hover {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  border-bottom-color: var(--accent-color) !important;
+  transform: translateY(-5px);
+}
+
+.value-card:hover::after {
+  width: 100%;
+}
+
+.value-icon-box {
+  width: 70px;
+  height: 70px;
+  background-color: var(--hero-list-hover);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.value-icon-box svg {
+  transition: transform 0.6s ease-in-out;
+}
+
+.value-card:hover .value-icon-box svg {
+  transform: scale(1.6) rotate(360deg);
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.back-btn:hover {
+  color: var(--accent-color);
+  transform: translateX(-4px);
+}
+[dir="rtl"] .back-icon {
+  transform: scaleX(-1);
+  rotate: 180deg;
+}
+[dir="rtl"] .back-btn:hover {
+  transform: translateX(4px);
+}

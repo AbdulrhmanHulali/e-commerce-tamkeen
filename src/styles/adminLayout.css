@@ -1,0 +1,307 @@
+.admin-layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--input-bg);
+}
+
+.admin-layout-wrapper .text-main-theme,
+.admin-layout-wrapper h1,
+.admin-layout-wrapper h2,
+.admin-layout-wrapper h3,
+.admin-layout-wrapper h4,
+.admin-layout-wrapper h5,
+.admin-layout-wrapper h6 {
+  color: var(--main-text) !important;
+}
+
+.admin-layout-wrapper .text-muted {
+  color: var(--muted-text) !important;
+}
+
+.admin-layout-wrapper .bg-card-theme {
+  background-color: var(--card-bg) !important;
+}
+
+.admin-layout-wrapper .bg-input-theme {
+  background-color: var(--input-bg) !important;
+}
+
+/* ================== القائمة الجانبية (Sidebar) ================== */
+.admin-sidebar {
+  width: 280px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  background-color: var(--card-bg);
+  border-inline-end: 1px solid var(--border-color);
+  z-index: 10;
+}
+
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  color: var(--main-text);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.admin-nav-link:hover {
+  background-color: var(--input-bg);
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.admin-nav-link.active {
+  background-color: var(--accent-color);
+  color: #ffffff; /* لون النص دائماً أبيض على لون الـ Accent */
+  box-shadow: 0 4px 15px rgba(240, 52, 93, 0.25); /* لون ظلال من الـ accent-color */
+}
+
+/* ================== المحتوى الرئيسي ================== */
+.admin-main-content {
+  flex-grow: 1;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+/* ================== البطاقات (Cards) ================== */
+.admin-stat-card,
+.admin-chart-card {
+  background-color: var(--card-bg) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--card-shadow) !important;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.stat-card-bg-icon {
+  position: absolute;
+  inset-inline-end: -10px;
+  bottom: -15px;
+  font-size: 110px;
+  opacity: 0.05; /* زدت الشفافية قليلاً للوضع الداكن */
+  color: var(--main-text);
+  z-index: 0;
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+
+.stat-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon-wrapper.revenue {
+  background-color: var(--danger-bg);
+  color: var(--accent-color);
+}
+
+.stat-icon-wrapper.orders {
+  background-color: rgba(13, 110, 253, 0.15); /* لون أزرق ثابت خفيف */
+  color: #0d6efd;
+}
+
+.stat-icon-wrapper.products {
+  background-color: rgba(255, 193, 7, 0.15); /* لون أصفر ثابت خفيف */
+  color: var(--star-color);
+}
+
+.stat-icon-wrapper.users {
+  background-color: rgba(25, 135, 84, 0.15); /* لون أخضر ثابت خفيف */
+  color: var(--success-text);
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+/* ================== تنسيقات جداول الآدمن ================== */
+.admin-custom-table {
+  color: var(--main-text) !important;
+  --bs-table-bg: transparent; 
+  --bs-table-color: var(--main-text);
+}
+
+.admin-custom-table th,
+.admin-custom-table thead th {
+  font-weight: 600;
+  color: var(--main-text) !important; /* 👈 هنا السر لإجبار اللون على التجاوب */
+  border-bottom: 2px solid var(--border-color) !important;
+  padding-bottom: 12px;
+  background-color: transparent !important;
+}
+
+.admin-custom-table td {
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 8px;
+  vertical-align: middle;
+  background-color: transparent !important;
+}
+
+.admin-custom-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+.admin-custom-table tbody tr:hover td {
+  background-color: var(--input-bg) !important;
+}
+
+/* ================== الكلاسات البديلة للستايل الداخلي ================== */
+.product-name-truncate {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-product-img-sm {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  background-color: var(--main-bg); /* إضافة خلفية لتمييز الصور في الدارك مود */
+}
+
+.admin-product-img-sm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ================== أزرار الأكشن والمظهر العام ================== */
+.btn-accent {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover:not(:disabled) {
+  filter: brightness(0.9);
+  box-shadow: 0 4px 12px rgba(240, 52, 93, 0.3);
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+/* أزرار التعديل والحذف الصغيرة */
+.action-btn-sm {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--main-text);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.action-btn-sm.edit:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.action-btn-sm.delete:hover {
+  background-color: var(--color-danger-btn);
+  color: #ffffff;
+  border-color: var(--color-danger-btn);
+}
+
+/* ================== نظام الصفحات (Pagination) ================== */
+.admin-pagination .page-link {
+  color: var(--main-text) !important;
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.admin-pagination .page-link:hover {
+  background-color: var(--input-bg) !important;
+  color: var(--accent-color) !important;
+}
+
+.admin-pagination .page-item.active .page-link {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+.admin-pagination .page-item.disabled .page-link {
+  background-color: var(--input-bg) !important;
+  color: var(--muted-text) !important;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* ================== تنسيقات المودال (الوضع الداكن والفاتح) ================== */
+/* فرض لون الخلفية على الغلاف الخارجي للمودال */
+.admin-modal-theme {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--card-shadow-hover) !important;
+}
+
+/* تنسيق حقول الإدخال داخل المودال لتتوافق مع الوضعين */
+.admin-modal-theme .custom-light-input {
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--main-text) !important;
+  border-radius: 8px;
+}
+
+.admin-modal-theme .custom-light-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(240, 52, 93, 0.25) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.admin-modal-theme .custom-light-input::placeholder {
+  color: var(--muted-text) !important;
+  opacity: 0.7;
+}
+
+/* حل مشكلة القائمة المنسدلة (Select) في الوضع الداكن */
+.admin-modal-theme .custom-light-input option {
+  background-color: var(--card-bg) !important;
+  color: var(--main-text) !important;
+}
+
+/* قلب لون زر الإغلاق (X) في الوضع الداكن */
+.admin-modal-theme .btn-close {
+  filter: var(--close-btn-filter, none);
+}
+
+/* تنسيق زر الإلغاء (Cancel) ليظهر بوضوح في الوضعين */
+.cancel-btn-theme {
+  background-color: transparent !important;
+  color: var(--main-text) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn-theme:hover {
+  background-color: var(--input-bg) !important;
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}

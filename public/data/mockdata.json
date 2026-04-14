@@ -1,0 +1,809 @@
+{
+  "dealsEndDate": "2026-06-12T23:59:59",
+  "dealsData": [
+    {
+      "id": 1,
+      "title": "Smart watches",
+      "image": "/src/assets/images/smartwatch.png",
+      "discount": "-25%"
+    },
+    {
+      "id": 2,
+      "title": "Laptops",
+      "image": "/src/assets/images/laptop.png",
+      "discount": "-15%"
+    },
+    {
+      "id": 3,
+      "title": "GoPro cameras",
+      "image": "/src/assets/images/camera.png",
+      "discount": "-40%"
+    },
+    {
+      "id": 4,
+      "title": "Headphones",
+      "image": "/src/assets/images/headphones.png",
+      "discount": "-25%"
+    }
+  ],
+  "homeOutdoorData": {
+    "title": "Home and outdoor",
+    "buttonText": "Source now",
+    "bannerBgClass": "home-banner-bg",
+    "products": [
+      {
+        "id": 101,
+        "title": "Soft chairs",
+        "price": "19000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 102,
+        "title": "Sofa & chair",
+        "price": "19000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 103,
+        "title": "Kitchen dishes",
+        "price": "190000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 104,
+        "title": "Smart watches",
+        "price": "19000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 105,
+        "title": "Kitchen mixer",
+        "price": "10000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 106,
+        "title": "Blenders",
+        "price": "39000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 107,
+        "title": "Home appliance",
+        "price": "190000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 108,
+        "title": "Coffee maker",
+        "price": "10000",
+        "image": "/src/assets/images/smartwatch.png"
+      }
+    ]
+  },
+  "electronicsData": {
+    "title": "Consumer electronics and gadgets",
+    "buttonText": "Source now",
+    "bannerBgClass": "electronics-banner-bg",
+    "products": [
+      {
+        "id": 201,
+        "title": "Smart watches",
+        "price": "19000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 202,
+        "title": "Cameras",
+        "price": "890000",
+        "image": "/src/assets/images/camera.png"
+      },
+      {
+        "id": 203,
+        "title": "Headphones",
+        "price": "10000",
+        "image": "/src/assets/images/headphones.png"
+      },
+      {
+        "id": 204,
+        "title": "Smart watches",
+        "price": "90000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 205,
+        "title": "Gaming set",
+        "price": "35000",
+        "image": "/src/assets/images/headphones.png"
+      },
+      {
+        "id": 206,
+        "title": "Laptops & PC",
+        "price": "34000",
+        "image": "/src/assets/images/laptop.png"
+      },
+      {
+        "id": 207,
+        "title": "Smartphones",
+        "price": "19000",
+        "image": "/src/assets/images/phone.png"
+      },
+      {
+        "id": 208,
+        "title": "Electric kattle",
+        "price": "24000",
+        "image": "/src/assets/images/smartwatch.png"
+      }
+    ]
+  },
+  "recommendedData": [
+    {
+      "id": 301,
+      "title": "T-shirts with multiple colors, for men",
+      "price": "1030",
+      "image": "/src/assets/images/smartwatch.png"
+    },
+    {
+      "id": 302,
+      "title": "Jeans shorts for men blue color",
+      "price": "1030",
+      "image": "/src/assets/images/laptop.png"
+    },
+    {
+      "id": 303,
+      "title": "Brown winter coat medium size",
+      "price": "1250",
+      "image": "/src/assets/images/camera.png"
+    },
+    {
+      "id": 304,
+      "title": "Jeans bag for travel for men",
+      "price": "3400",
+      "image": "/src/assets/images/headphones.png"
+    },
+    {
+      "id": 305,
+      "title": "Leather wallet",
+      "price": "9900",
+      "image": "/src/assets/images/smartwatch.png"
+    },
+    {
+      "id": 306,
+      "title": "Canon camera black, 100x zoom",
+      "price": "999",
+      "image": "/src/assets/images/camera.png"
+    },
+    {
+      "id": 307,
+      "title": "Headset for gaming with mic",
+      "price": "89900",
+      "image": "/src/assets/images/headphones.png"
+    },
+    {
+      "id": 308,
+      "title": "Smartwatch silver color modern",
+      "price": "10300",
+      "image": "/src/assets/images/smartwatch.png"
+    },
+    {
+      "id": 309,
+      "title": "Blue wallet for men leather metarfial",
+      "price": "10300",
+      "image": "/src/assets/images/smartwatch.png"
+    },
+    {
+      "id": 310,
+      "title": "Jeans bag for travel for men",
+      "price": "80950",
+      "image": "/src/assets/images/laptop.png"
+    }
+  ],
+  "categoryPageData": {
+    "totalItems": "12,911",
+    "categoryName": "Mobile accessory",
+    "filters": {
+      "categories": [
+        "Mobile-accessory",
+        "Electronics",
+        "Smartphones",
+        "Modern-tech"
+      ],
+      "brands": ["Samsung", "Apple", "Huawei", "Pocco", "Lenovo"],
+      "features": [
+        "Metallic",
+        "Plastic cover",
+        "8GB Ram",
+        "Super power",
+        "Large Memory"
+      ],
+      "conditions": ["Any", "Refurbished", "Brand new", "Old items"]
+    },
+    "products": [
+      {
+        "id": 1001,
+        "title": "Canon Cmera EOS 2000, Black 10x zoom",
+        "price": "99800",
+        "oldPrice": "112800",
+        "rating": 4.5,
+        "ratingScore": "7.5",
+        "orders": 154,
+        "shipping": "Free Shipping",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "image": "/src/assets/images/camera.png"
+      },
+      {
+        "id": 1002,
+        "title": "GoPro HERO6 4K Action Camera - Black",
+        "price": "99800",
+        "oldPrice": null,
+        "rating": 4.0,
+        "ratingScore": "7.5",
+        "orders": 154,
+        "shipping": "Free Shipping",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+        "image": "/src/assets/images/camera.png"
+      },
+      {
+        "id": 1003,
+        "title": "Apple iPhone 12 Pro Max 128GB - Red",
+        "price": "99800",
+        "oldPrice": "112800",
+        "rating": 4.5,
+        "ratingScore": "7.5",
+        "orders": 154,
+        "shipping": "Free Shipping",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "image": "/src/assets/images/phone.png"
+      },
+      {
+        "id": 1004,
+        "title": "Lenovo IdeaPad Gaming 3 Laptop",
+        "price": "99800",
+        "oldPrice": null,
+        "rating": 4.5,
+        "ratingScore": "7.5",
+        "orders": 154,
+        "shipping": "Free Shipping",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+        "image": "/src/assets/images/laptop.png"
+      },
+      {
+        "id": 1005,
+        "title": "Smartwatch Silver Color Modern",
+        "price": "99800",
+        "oldPrice": "112800",
+        "rating": 3.5,
+        "ratingScore": "7.5",
+        "orders": 154,
+        "shipping": "Free Shipping",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+        "image": "/src/assets/images/smartwatch.png"
+      }
+    ]
+  },
+  "productDetailsData": {
+    "id": "1",
+    "title": "Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle",
+    "status": "In stock",
+    "rating": 4.5,
+    "score": 9.3,
+    "reviews": 32,
+    "sold": 154,
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&q=80",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80",
+      "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800&q=80",
+      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80"
+    ],
+    "priceTiers": [
+      { "price": "98000", "qty": "50-100 pcs", "active": true },
+      { "price": "90000", "qty": "100-700 pcs", "active": false },
+      { "price": "78000", "qty": "700+ pcs", "active": false }
+    ],
+    "details": {
+      "Price": "Negotiable",
+      "Type": "Classic shoes",
+      "Material": "Plastic material",
+      "Design": "Modern nice",
+      "Customization": "Customized logo and design custom packages",
+      "Protection": "Refund Policy",
+      "Warranty": "2 years full warranty"
+    },
+    "supplier": {
+      "name": "Guanjoi Trading LLC",
+      "initial": "R",
+      "location": "Germany, Berlin",
+      "flag": "https://flagcdn.com/de.svg",
+      "isVerified": true,
+      "shipping": "Worldwide shipping"
+    },
+    "tabsData": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nQuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "table": [
+        { "label": "Model", "value": "#8786867" },
+        { "label": "Style", "value": "Classic style" },
+        { "label": "Certificate", "value": "ISO-898921212" },
+        { "label": "Size", "value": "34mm x 450mm x 19mm" },
+        { "label": "Memory", "value": "36GB RAM" }
+      ],
+      "featureTitle": "",
+      "features": [
+        "Some great feature name here",
+        "Lorem ipsum dolor sit amet, consectetur",
+        "Duis aute irure dolor in reprehenderit",
+        "Some great feature name here"
+      ]
+    },
+    "relatedProducts": [
+      {
+        "id": 500,
+        "title": "Men Blazers Sets Elegant Formal",
+        "price": "99500",
+        "image": "/src/assets/images/home-and-outdoor.png"
+      },
+      {
+        "id": 501,
+        "title": "Men Shirt Sleeve Polo Contrast",
+        "price": "70000",
+        "image": "/src/assets/images/headphones.png"
+      },
+      {
+        "id": 502,
+        "title": "Apple Watch Series Space Gray",
+        "price": "995000",
+        "image": "/src/assets/images/smartwatch.png"
+      },
+      {
+        "id": 503,
+        "title": "Basketball Crew Socks Long Stuff",
+        "price": "995000",
+        "image": "/src/assets/images/laptop.png"
+      },
+      {
+        "id": 504,
+        "title": "New Summer Men's castrol T-Shirts",
+        "price": "995000",
+        "image": "/src/assets/images/phone.png"
+      },
+      {
+        "id": 505,
+        "title": "Smart Watch Fitness Tracker Black",
+        "price": "120000",
+        "image": "/src/assets/images/camera.png"
+      }
+    ]
+  },
+  "cartData": [
+    {
+      "id": 1001,
+      "title": "T-shirts with multiple colors, for men",
+      "price": 25500,
+      "image": "/src/assets/images/smartwatch.png",
+      "quantity": 2,
+      "seller": "Artisanal brand",
+      "details": "Size: medium, Color: blue"
+    },
+    {
+      "id": 1002,
+      "title": "Smartwatch silver color modern",
+      "price": 90000,
+      "image": "/src/assets/images/smartwatch.png",
+      "quantity": 1,
+      "seller": "Tech store",
+      "details": "Material: Plastic"
+    },
+    {
+      "id": 1003,
+      "title": "Headset for gaming with mic",
+      "price": 150000,
+      "image": "/src/assets/images/headphones.png",
+      "quantity": 3,
+      "seller": "Gaming Gadgets",
+      "details": "Color: Black"
+    }
+  ],
+  "suppliersData": [
+    {
+      "id": 1,
+      "country": "Arabic Emirates",
+      "domain": "shopname.ae",
+      "flag": "https://flagcdn.com/ae.svg"
+    },
+    {
+      "id": 2,
+      "country": "Australia",
+      "domain": "shopname.ae",
+      "flag": "https://flagcdn.com/au.svg"
+    },
+    {
+      "id": 3,
+      "country": "United States",
+      "domain": "shopname.ae",
+      "flag": "https://flagcdn.com/us.svg"
+    },
+    {
+      "id": 4,
+      "country": "Russia",
+      "domain": "shopname.ru",
+      "flag": "https://flagcdn.com/ru.svg"
+    },
+    {
+      "id": 5,
+      "country": "Italy",
+      "domain": "shopname.it",
+      "flag": "https://flagcdn.com/it.svg"
+    },
+    {
+      "id": 6,
+      "country": "Denmark",
+      "domain": "denmark.com.dk",
+      "flag": "https://flagcdn.com/dk.svg"
+    },
+    {
+      "id": 7,
+      "country": "France",
+      "domain": "shopname.com.fr",
+      "flag": "https://flagcdn.com/fr.svg"
+    },
+    {
+      "id": 8,
+      "country": "Arabic Emirates",
+      "domain": "shopname.ae",
+      "flag": "https://flagcdn.com/ae.svg"
+    },
+    {
+      "id": 9,
+      "country": "China",
+      "domain": "shopname.ae",
+      "flag": "https://flagcdn.com/cn.svg"
+    },
+    {
+      "id": 10,
+      "country": "Great Britain",
+      "domain": "shopname.co.uk",
+      "flag": "https://flagcdn.com/gb.svg"
+    }
+  ],
+  "extraServicesData": [
+    {
+      "id": 1,
+      "title": "Source from Industry Hubs",
+      "iconName": "FaSearch",
+      "img": "/src/assets/images/extra-service1.png"
+    },
+    {
+      "id": 2,
+      "title": "Customize Your Products",
+      "iconName": "FaBox",
+      "img": "/src/assets/images/extra-service2.png"
+    },
+    {
+      "id": 3,
+      "title": "Fast, reliable shipping by ocean or air",
+      "iconName": "FaPaperPlane",
+      "img": "/src/assets/images/extra-service3.png"
+    },
+    {
+      "id": 4,
+      "title": "Product monitoring and inspection",
+      "iconName": "FaShieldAlt",
+      "img": "/src/assets/images/extra-service4.png"
+    }
+  ],
+  "heroData": [
+    {
+      "id": 1,
+      "name": "Automobiles",
+      "title": "Latest trending",
+      "subtitle": "Automobile parts",
+      "img": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Clothes and wear",
+      "title": "Summer Collection",
+      "subtitle": "Fashion clothes",
+      "img": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Home interiors",
+      "title": "Modern Home",
+      "subtitle": "Interior Design",
+      "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Computer and tech",
+      "title": "Latest trending",
+      "subtitle": "Electronic items",
+      "img": "/src/assets/images/latest-trending.png"
+    },
+    {
+      "id": 5,
+      "name": "Tools, equipments",
+      "title": "Industrial Tools",
+      "subtitle": "High Quality Gear",
+      "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 6,
+      "name": "Sports and outdoor",
+      "title": "Stay Active",
+      "subtitle": "Sports Equipment",
+      "img": "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 7,
+      "name": "Animal and pets",
+      "title": "Pet Care",
+      "subtitle": "Best for your pets",
+      "img": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 8,
+      "name": "Machinery tools",
+      "title": "Heavy Duty",
+      "subtitle": "Machinery parts",
+      "img": "https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop"
+    }
+  ],
+  "termsData": [
+    {
+      "title": "Acceptance of Terms",
+      "content": "By using this application, you acknowledge that you have read, understood, and agree to fully comply with these terms. If you do not agree with these terms, please do not use the application. The application management reserves the right to modify these terms at any time, and you will be notified of updates when necessary."
+    },
+    {
+      "title": "Account Creation and Use",
+      "content": "By using this application, you acknowledge that you have read, understood, and agree to fully comply with these terms. If you do not agree with these terms, please do not use the application. The application management reserves the right to modify these terms at any time, and you will be notified of updates when necessary."
+    },
+    {
+      "title": "Intellectual Property Rights",
+      "content": "By using this application, you acknowledge that you have read, understood, and agree to fully comply with these terms. If you do not agree with these terms, please do not use the application. The application management reserves the right to modify these terms at any time, and you will be notified of updates when necessary."
+    },
+    {
+      "title": "User Conduct",
+      "content": "By using this application, you acknowledge that you have read, understood, and agree to fully comply with these terms. If you do not agree with these terms, please do not use the application. The application management reserves the right to modify these terms at any time, and you will be notified of updates when necessary."
+    }
+  ],
+  "profileData": {
+    "id": 17,
+    "avatar": null,
+    "user": {
+      "id": 18,
+      "name": "Abdulrahman Helali",
+      "email": "abdulrhmanhelali1@gmail.com",
+      "phone": "0950000099",
+      "image": "",
+      "token": null
+    }
+  },
+  "faqData": [
+    {
+      "question": "How can I track my order?",
+      "answer": "Once your order has been shipped, you will receive an email containing a tracking number and a link to track the delivery status of your package."
+    },
+    {
+      "question": "What is your return policy?",
+      "answer": "We offer a 30-day return policy for unused and undamaged items in their original packaging. Please visit our Returns page for detailed instructions."
+    },
+    {
+      "question": "Do you ship internationally?",
+      "answer": "Yes, we ship to most countries worldwide. Shipping costs and delivery times vary depending on the destination and will be calculated at checkout."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay. All transactions are securely processed."
+    },
+    {
+      "question": "How can I contact customer support?",
+      "answer": "You can reach our customer support team via the 'Contact Us' page, by email at support@yourstore.com, or by calling our toll-free number during business hours."
+    }
+  ],
+  "aboutUsData": [
+    {
+      "icon": "FiShield",
+      "title": "Trust & Security",
+      "desc": "We prioritize your security, ensuring that all transactions and data are kept safe and private."
+    },
+    {
+      "icon": "FiAward",
+      "title": "Premium Quality",
+      "desc": "We partner with top brands to deliver only the highest quality products to your doorstep."
+    },
+    {
+      "icon": "FiSmile",
+      "title": "Customer First",
+      "desc": "Your satisfaction is our ultimate goal. Our support team is always ready to assist you."
+    }
+  ],
+"privacyData": [
+    {
+      "icon": "FiDatabase",
+      "title": "Information We Collect",
+      "content": "We collect information that you provide directly to us, such as when you create or modify your account, request on-demand services, contact customer support, or otherwise communicate with us. This information may include: name, email, phone number, postal address, and payment method."
+    },
+    {
+      "icon": "FiUserCheck",
+      "title": "How We Use Your Information",
+      "content": "We may use the information we collect about you to provide, maintain, and improve our services. This includes using the information to process transactions, send related information (including confirmations and invoices), and provide customer support."
+    },
+    {
+      "icon": "FiShare2",
+      "title": "Sharing of Information",
+      "content": "We do not share your personal information with third parties except as described in this privacy policy. We may share your information with vendors, consultants, and other service providers who need access to such information to carry out work on our behalf."
+    },
+    {
+      "icon": "FiLock",
+      "title": "Data Security",
+      "content": "We take reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction. Your data is encrypted and stored in highly secure environments."
+    },
+    {
+      "icon": "FiSettings",
+      "title": "Cookies and Tracking",
+      "content": "We use cookies and similar tracking technologies to track the activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
+    },
+    {
+      "icon": "FiFileText",
+      "title": "Your Data Rights",
+      "content": "You have the right to request access, correction, or deletion of your personal data at any time. We are committed to giving you full control over your information."
+    }
+  ],
+  "privacyPageData": {
+    "header": {
+      "badge": "Privacy & Safety",
+      "title": "Privacy Policy",
+      "subtitle": "Your privacy is critically important to us. We have a few fundamental principles that we follow to ensure your data is secure and respected."
+    },
+    "footer": {
+      "title": "Have more questions?",
+      "text": "Our Data Protection team is ready to help you anytime.",
+      "btnText": "Contact Us"
+    }
+  },
+  "myOrdersData": [
+    {
+      "id": "#ORD-87364",
+      "date": "March 12, 2026",
+      "status": "Processing",
+      "total": "145.00",
+      "itemsCount": 3,
+      "itemsPreview": "Wireless Mouse, Mechanical Keyboard..."
+    },
+    {
+      "id": "#ORD-87350",
+      "date": "March 05, 2026",
+      "status": "Delivered",
+      "total": "89.99",
+      "itemsCount": 1,
+      "itemsPreview": "Bluetooth Headphones"
+    },
+    {
+      "id": "#ORD-87312",
+      "date": "February 28, 2026",
+      "status": "Cancelled",
+      "total": "210.50",
+      "itemsCount": 2,
+      "itemsPreview": "Gaming Monitor, HDMI Cable"
+    }
+  ],
+  "orderDetailsData": {
+    "status": "Processing",
+    "date": "March 12, 2026",
+    "shippingAddress": "123 Commerce St, Tech City, 10012, NY",
+    "paymentMethod": "Visa ending in **** 4242",
+    "subtotal": "130.00",
+    "shipping": "15.00",
+    "total": "145.00",
+    "items": [
+      {
+        "name": "Wireless Gaming Mouse",
+        "price": "45000",
+        "qty": 1,
+        "img": "https://via.placeholder.com/80"
+      },
+      {
+        "name": "Mechanical Keyboard",
+        "price": "85000",
+        "qty": 1,
+        "img": "https://via.placeholder.com/80"
+      }
+    ]
+  },
+  "savedForLaterData": [
+    {
+      "id": 101,
+      "title": "Smart watches fitness tracker black color",
+      "price": "99000",
+      "image": "/src/assets/images/smartwatch.png"
+    },
+    {
+      "id": 102,
+      "title": "GoPro action camera 4K resolution",
+      "price": "120000",
+      "image": "/src/assets/images/camera.png"
+    },
+    {
+      "id": 103,
+      "title": "Apple Watch Series Space Gray",
+      "price": "103000",
+      "image": "/src/assets/images/smartwatch.png"
+    },
+    {
+      "id": 104,
+      "title": "Gaming Headset with Mic",
+      "price": "99000",
+      "image": "/src/assets/images/headphones.png"
+    }
+  ],
+  "favoritesData": [
+    {
+      "id": 1,
+      "name": "Apple Watch Series 9",
+      "price": 399000,
+      "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=1000&auto=format&fit=crop",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Sony Wireless Headphones",
+      "price": 299990,
+      "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1000&auto=format&fit=crop",
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "name": "Premium Leather Backpack",
+      "price": 120500,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1000&auto=format&fit=crop",
+      "inStock": true
+    }
+  ],
+  "aboutUsPageData": {
+    "hero": {
+      "title": "Who We Are",
+      "subtitle": "Building the best destination for online shopping.",
+      "description": "Since our inception, we have been committed to providing a seamless, secure, and highly personalized shopping experience. We believe that shopping online should be as easy and enjoyable as visiting your favorite local store, but with the convenience of global reach.",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    },
+    "stats": [
+      { "id": 1, "value": "10K+", "label": "Happy Customers", "delay": "0" },
+      { "id": 2, "value": "50+", "label": "Top Brands", "delay": "150" },
+      { "id": 3, "value": "24/7", "label": "Customer Support", "delay": "300" }
+    ],
+    "valuesHeader": {
+      "title": "Our Core Values",
+      "subtitle": "Everything we do is guided by these principles to ensure you get the best."
+    },
+    "values": [
+      { "id": 1, "icon": "FaShieldAlt", "title": "Secure Shopping", "description": "Your data and transactions are protected by industry-leading encryption.", "delay": "100" },
+      { "id": 2, "icon": "FaShippingFast", "title": "Fast Delivery", "description": "We partner with top logistics to ensure your items arrive on time.", "delay": "250" },
+      { "id": 3, "icon": "FaSmile", "title": "Customer First", "description": "Your satisfaction is our priority. We are here to help you anytime.", "delay": "400" }
+    ]
+  },
+  "faqPageData": {
+    "sidebar": {
+      "titlePart1": "How can we",
+      "titleHighlight": "help",
+      "titlePart2": "you?",
+      "subtitle": "Find answers to common questions about our products, shipping, and returns. We're here to make your experience seamless.",
+      "contactTitle": "Need more help?",
+      "contactStatus": "We reply within 24 hours",
+      "contactDesc": "Can't find the answer you're looking for? Chat with our friendly support team.",
+      "contactBtn": "Get in touch"
+    }
+  },
+  "termsPageData": {
+    "header": {
+      "titlePart1": "Terms",
+      "titleHighlight": "& Conditions",
+      "updateText": "Last updated: March 2026"
+    },
+    "footer": {
+      "title": "Have more questions?",
+      "lead": "Our legal and support teams are always available to help you understand all the details of our service.",
+      "btnText": "Contact Us Now"
+    }
+  }
+}

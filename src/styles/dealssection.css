@@ -1,0 +1,47 @@
+.deals-section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.deals-wrapper-bg {
+  background-color: var(--section-bg);
+}
+
+.swiper-slide-auto {
+  height: auto;
+}
+
+.deals-timer-section {
+  border-inline-end: 1px solid var(--border-color);
+}
+
+@media (max-width: 991px) {
+  .deals-timer-section {
+    border-inline-end: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .timer-unit {
+    width: 40px;
+    height: 45px;
+  }
+}
+
+.deals-title {
+  color: var(--main-text);
+  font-size: 20px;
+}
+
+.deals-subtitle {
+  color: var(--muted-text);
+  font-size: 15px;
+}
+
+.deals-products-row > div {
+  display: flex;
+}
+
+.deals-products-row .product-card {
+  width: 100%;
+}

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: #ffffff;
+  --main-text: #212529;
+  --accent-color: #f0345d;
+  --pink-gradient: linear-gradient(to right, #f0345d 0%, #fbc4d1 100%);
+  --section-bg: #f4f6f8;
+  --card-bg: #ffffff;
+  --border-color: #ced4da;
+  --muted-text: #6c757d;
+  --timer-bg: #6c757d;
+  --danger-bg: #ffe3e3;
+  --danger-text: #ff4d4f;
+  --home-banner-bg: #f5eadc;
+  --electronics-banner-bg: #e2f0f6;
+  --category-btn-bg: #ffffff;
+  --category-btn-text: #1c1c1c;
+  --icon-badge-bg: #ffe3f0;
+  --icon-badge-color: #000000;
+  --service-icon-bg: #ffffff;
+  --card-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --newsletter-bg: #e5e7eb;
+  --input-bg: #ffffff;
+  --hero-list-hover: #fff0f6;
+  --hero-btn-join: #f0345d;
+  --hero-btn-login: #ffffff;
+  --hero-orange-card: #f38332;
+  --hero-teal-card: #f0728d;
+  --hero-card-text: #ffffff;
+  --hero-banner-text: #1c1c1c;
+  --nav-bg: #ffffff;
+  --footer-bg: #ffffff;
+  --star-color: #ffc107;
+  --success-text: #198754;
+  --price-tier: #fff0df;
+  --price-text: #212529;
+  --custom-page-bg: #ffffff;
+  --custom-page-text: #333333;
+  --custom-primary-btn: #ff385c;
+  --color-success: #00b517;
+  --color-success-hover: #009913;
+  --color-danger-btn: #fa3434;
+  --color-warning: #ff9017;
+  --color-warning-hover: #e07b12;
+  --color-primary-darker: #d13d54;
+  --gray-light-bg: #f8f9fa;
+  --gray-border-light: #e0e0e0;
+  --gray-border-mid: #e0e0e0;
+  --gray-border-dark: #a0a0a0;
+  --gray-text-light: #d1d1d1;
+  --supplier-avatar-bg: #cce7e5;
+  --supplier-avatar-text: #4bb5ab;
+  --discount-banner-bg: #9d2740;
+  --checkout-overlay: rgba(20, 10, 10, 0.4);
+  --faq-pink: #ff4757;
+  --faq-pink-light: rgba(255, 71, 87, 0.08);
+  --faq-pink-hover: #ff3344;
+  --privacy-pink: #ff4757;
+  --privacy-pink-light: rgba(255, 71, 87, 0.08);
+  --privacy-pink-hover: #ff3344;
+  --close-btn-filter: none;
+  --select-arrow-filter: none;
+  --chip-bg: var(--section-bg);
+  --chip-border: transparent;
+  --accordion-icon-filter: none;
+  --accordion-active-icon-filter: none;
+  --accordion-arrow-filter: none;
+  --mobile-icon-color: #f06292;
+    --checkout-pink: #ff4757;
+  --checkout-pink-hover: #ff3344;
+  --checkout-pink-light: rgba(255, 71, 87, 0.08);
+
+}
+
+html[data-theme="dark"] {
+  --main-bg: #121212;
+  --main-text: #f8f9fa;
+  --accent-color: #f0345d;
+  --section-bg: #1e1e1e;
+  --card-bg: #2b2b2b;
+  --border-color: #444444;
+  --muted-text: #adb5bd;
+  --timer-bg: #3b3b3b;
+  --danger-bg: rgba(255, 77, 79, 0.15);
+  --danger-text: #ff6b6b;
+  --home-banner-bg: #2c241b;
+  --electronics-banner-bg: #1c272e;
+  --category-btn-bg: #1e1e1e;
+  --category-btn-text: #f8f9fa;
+  --icon-badge-bg: #ffe3f0;
+  --icon-badge-color: #000000;
+  --service-icon-bg: #2b2b2b;
+  --card-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --card-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.4);
+  --newsletter-bg: #151515;
+  --input-bg: #000000;
+  --hero-list-hover: #2c2c2c;
+  --hero-btn-join: #f0345d;
+  --hero-btn-login: #3b3b3b;
+  --hero-banner-text: #ffffff;
+  --hero-orange-card: #b05e24;
+  --hero-teal-card: #f0728d;
+  --hero-card-text: #f8f9fa;
+  --nav-bg: #1e1e1e;
+  --footer-bg: #1e1e1e;
+  --star-color: #ffcd39;
+  --success-text: #47b282;
+  --price-tier: #fff0df;
+  --price-text: #212529;
+  --custom-page-bg: #1a1a1a;
+  --custom-page-text: #f5f5f5;
+  --custom-primary-btn: #e31c5f;
+  --color-success: #009913;
+  --color-success-hover: #007a0f;
+  --color-danger-btn: #e62e2e;
+  --color-warning: #e07b12;
+  --color-warning-hover: #c2670e;
+  --color-primary-darker: #b52b41;
+  --gray-light-bg: #1e1e1e;
+  --gray-border-light: #2b2b2b;
+  --gray-border-mid: #444444;
+  --gray-border-dark: #666666;
+  --gray-text-light: #888888;
+  --supplier-avatar-bg: #24413e;
+  --supplier-avatar-text: #61d4c8;
+  --discount-banner-bg: #631728;
+  --checkout-overlay: rgba(0, 0, 0, 0.7);
+  --close-btn-filter: invert(1) grayscale(100%) brightness(200%);
+  --select-arrow-filter: brightness(0) invert(1);
+  --chip-bg: transparent;
+  --chip-border: var(--border-color);
+  --accordion-icon-filter: brightness(0) invert(1);
+  --accordion-active-icon-filter: none;
+  --accordion-arrow-filter: brightness(0) invert(1);
+  --mobile-icon-color: #ffb6c1;
+}
+
+html,
+body {
+  background-color: var(--main-bg) !important;
+  color: var(--main-text) !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  min-height: 100vh;
+  margin: 0;
+}
+
+html[dir="rtl"] {
+  font-family: "Cairo", sans-serif;
+  --pink-gradient: linear-gradient(to left, #f0345d 0%, #fbc4d1 100%);
+}
+.card-title,
+.card-text,
+.card {
+  color: var(--main-text);
+}

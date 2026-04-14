@@ -1,0 +1,34 @@
+.custom-modal-content {
+  background-color: var(--card-bg) !important;
+  color: var(--main-text) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none !important;
+}
+
+.custom-modal-text {
+  color: var(--muted-text);
+}
+
+.custom-login-btn {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.custom-login-btn:hover {
+  background-color: var(--color-primary-darker) !important;
+  transform: translateY(-2px);
+}
+
+.custom-guest-btn {
+  color: var(--main-text) !important;
+  border-color: var(--border-color) !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease;
+}
+
+.custom-guest-btn:hover {
+  background-color: var(--section-bg) !important;
+}

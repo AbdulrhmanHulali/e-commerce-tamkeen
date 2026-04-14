@@ -1,0 +1,16 @@
+.timer-unit {
+  background-color: var(--timer-bg);
+  width: 50px;
+  height: 55px;
+  transition: all 0.3s ease;
+}
+
+.timer-value {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.timer-label {
+  font-size: 15px;
+}

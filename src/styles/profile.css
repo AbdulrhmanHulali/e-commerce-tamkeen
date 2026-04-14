@@ -1,0 +1,206 @@
+.profile-page-wrapper {
+  background-color: var(--section-bg) !important;
+  min-height: 100vh;
+}
+
+.profile-sidebar-card,
+.profile-content-card {
+  background-color: var(--card-bg) !important;
+  color: var(--main-text) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.profile-sidebar-card .text-muted,
+.profile-content-card .text-muted {
+  color: var(--muted-text) !important;
+}
+
+.sidebar-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--border-color);
+}
+
+.profile-list-group {
+  background-color: transparent;
+}
+
+.profile-list-item {
+  background-color: transparent !important;
+  color: var(--main-text) !important;
+  border: none !important;
+  padding: 0.9rem 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.profile-list-item .list-icon {
+  margin-inline-end: 12px;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.profile-list-item:hover {
+  background-color: rgba(232, 62, 140, 0.05) !important;
+  color: var(--accent-color) !important;
+}
+
+.profile-list-item.active {
+  background-color: var(--accent-color) !important;
+  color: #fff !important;
+}
+
+.profile-list-item.active .list-icon {
+  opacity: 1;
+  color: #fff;
+}
+
+.logout-item:hover {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+  color: #dc3545 !important;
+}
+
+.profile-avatar-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--border-color);
+  background-color: var(--card-bg);
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  bottom: 0;
+  inset-inline-end: -10px !important;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.avatar-edit-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.input-label-text {
+  color: var(--main-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.custom-light-input {
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--main-text) !important;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+.custom-light-input:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(232, 62, 140, 0.2) !important;
+}
+
+.custom-light-input.readonly-input {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  padding-inline-start: 0;
+  font-weight: 500;
+  opacity: 0.8;
+  cursor: default;
+}
+
+.btn-outline-accent {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-accent:hover {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+.default-avatar-placeholder {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+}
+
+.profile-sidebar-section-title {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.field-edit-btn {
+  inset-inline-end: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 8px;
+  z-index: 5;
+}
+
+.field-edit-btn:hover {
+  color: var(--accent-color) !important;
+}
+
+.custom-light-input:not(.readonly-input) {
+  padding-inline-end: 40px;
+}
+
+.avatar-variant-option img {
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  background-color: var(--input-bg);
+}
+
+.avatar-variant-option img:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 107, 129, 0.3);
+}
+.custom-avatar-modal {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 12px;
+}
+
+@media (max-width: 991px) {
+  .profile-sidebar-card {
+    margin-bottom: 1rem;
+  }
+}

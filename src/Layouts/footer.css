@@ -1,0 +1,116 @@
+.main-footer {
+  background-color: var(--card-bg);
+  transition: background-color 0.3s ease;
+}
+
+.footer-logo {
+  height: 55px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+.footer-brand a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-title {
+  color: var(--main-text);
+}
+.footer-desc {
+  color: var(--muted-text);
+  max-width: 280px;
+  line-height: 1.5;
+}
+.footer-link {
+  color: var(--muted-text) !important;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+.footer-link:hover {
+  color: var(--main-text) !important;
+  text-decoration: underline;
+}
+
+.social-icon-wrapper {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--muted-text);
+  color: var(--card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+.social-icon-wrapper:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.app-btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  width: 135px !important;
+  height: 42px !important;
+  padding: 0 10px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.app-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.app-btn-small {
+  font-size: 9px;
+  display: block;
+  margin-bottom: 2px;
+  opacity: 0.9;
+}
+
+.app-btn .fw-bold {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.footer-bottom {
+  background-color: var(--section-bg);
+  border-top: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+.footer-copyright,
+.footer-lang {
+  color: var(--muted-text);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .footer-logo {
+    height: 65px;
+  }
+}
+
+html[data-theme="dark"] .main-footer .dropdown-toggle,
+html[data-theme="dark"] .main-footer .dropdown-toggle::after {
+  color: white !important;
+  border-top-color: white !important;
+}

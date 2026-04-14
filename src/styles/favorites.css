@@ -1,0 +1,225 @@
+main .favorites-page-wrapper,
+body .favorites-page-wrapper {
+  background-color: var(--section-bg) !important;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  color: var(--main-text);
+  text-align: start !important;
+}
+
+.favorites-main-container {
+  max-width: 1100px;
+}
+
+[dir="rtl"] .fav-back-icon {
+  transform: scaleX(-1);
+  rotate: 180deg;
+}
+
+.fav-badge {
+  background-color: var(--privacy-pink-light);
+  color: var(--accent-color);
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.favorites-page-wrapper .fav-product-card,
+.favorites-page-wrapper .empty-fav-state {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.favorites-page-wrapper .fav-product-card:hover {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-4px);
+}
+
+.favorites-page-wrapper .fav-image-wrapper {
+  background-color: transparent !important;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+}
+
+.fav-img {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.fav-remove-btn {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 10px;
+  background-color: var(--danger-bg);
+  color: var(--danger-text);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fav-remove-btn:hover {
+  background-color: var(--danger-text);
+  color: #fff;
+}
+
+.fav-content {
+  padding: 1.5rem;
+}
+
+.fav-price {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.fav-add-cart-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.fav-add-cart-btn:hover {
+  background-color: var(--color-primary-darker);
+  transform: translateY(-2px);
+}
+
+.empty-fav-state {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.back-btn:hover {
+  color: var(--accent-color);
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .back-icon {
+  transform: scaleX(-1);
+  rotate: 180deg;
+}
+
+[dir="rtl"] .back-btn:hover {
+  transform: translateX(4px);
+}
+
+.fav-add-all-btn {
+  background-color: var(--accent-color) !important;
+  border: none !important;
+}
+
+.fav-add-all-btn:hover {
+  background-color: var(--color-primary-darker) !important;
+}
+
+.fav-list-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .fav-product-card.list-view {
+    flex-direction: row !important;
+    align-items: stretch;
+  }
+
+  .fav-product-card.list-view .fav-image-wrapper {
+    width: 280px;
+    min-width: 280px;
+    height: auto;
+    min-height: 200px;
+
+    border-inline-end: 1px solid var(--border-color);
+  }
+
+  .fav-product-card.list-view .fav-content {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .fav-product-card.list-view .fav-title-section {
+    flex: 1;
+    text-align: start;
+  }
+
+  .fav-product-card.list-view .fav-title-section h6 {
+    font-size: 1.25rem;
+    white-space: normal !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .fav-product-card.list-view .fav-action-section {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0 !important;
+
+    text-align: end;
+  }
+
+  .fav-product-card.list-view .fav-price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+  }
+}
+
+.fav-header {
+  text-align: start !important;
+}
+
+@media (max-width: 991px) {
+  .fav-header {
+    align-items: flex-start !important;
+  }
+
+  .fav-header > div {
+    width: 100%;
+    text-align: start !important;
+  }
+
+  .fav-header h2 {
+    justify-content: flex-start !important;
+  }
+}

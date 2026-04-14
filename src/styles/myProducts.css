@@ -1,0 +1,167 @@
+.text-main-theme {
+  color: var(--main-text) !important;
+}
+.bg-input-theme {
+  background-color: var(--input-bg) !important;
+}
+.bg-light-theme {
+  background-color: var(--card-bg) !important;
+}
+.text-accent {
+  color: var(--accent-color, #e41d60) !important;
+}
+.btn-accent {
+  background-color: var(--accent-color, #e41d60) !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.btn-accent:hover:not(:disabled) {
+  filter: brightness(0.9);
+  box-shadow: 0 4px 12px rgba(228, 29, 96, 0.3);
+}
+
+.custom-light-input {
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--border-color, #dee2e6) !important;
+  color: var(--main-text) !important;
+  border-radius: 8px;
+}
+.custom-light-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(228, 29, 96, 0.25) !important;
+  border-color: var(--accent-color, #e41d60) !important;
+}
+
+.custom-light-input::placeholder {
+  color: var(--main-text) !important;
+  opacity: 0.6 !important;
+}
+
+.custom-light-input option {
+  background-color: var(--card-bg) !important;
+  color: var(--main-text) !important;
+}
+
+.my-product-card {
+  background-color: var(--card-bg) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.my-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.product-img-placeholder {
+  height: 180px;
+  background-color: var(--input-bg);
+  border-bottom: 1px solid var(--border-color, #eaeaea);
+  width: 100%;
+}
+.product-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.custom-product-modal {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+}
+.custom-product-modal .modal-header {
+  border-bottom-color: var(--border-color) !important;
+}
+.custom-product-modal .modal-header .btn-close {
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+  filter: var(--close-btn-filter, none);
+}
+
+.add-product-btn {
+  margin-inline-start: auto;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.add-product-btn:hover {
+  background-color: var(--hero-teal-card);
+  border-color: var(--hero-teal-card);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.delete-product-btn {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 10px;
+  z-index: 10;
+  background-color: var(--card-bg);
+  color: var(--main-text);
+  border: 1px solid var(--border-color);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-product-btn:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+  transform: scale(1.1);
+}
+
+.action-buttons-overlay {
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.action-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--main-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn:hover {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.my-product-card {
+  transition: transform 0.2s ease;
+}
+.my-product-card:hover {
+  transform: translateY(-3px);
+}
