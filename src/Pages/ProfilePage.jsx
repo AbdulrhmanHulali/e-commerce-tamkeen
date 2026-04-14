@@ -30,7 +30,7 @@ import {
   FaTrashAlt,
 } from "react-icons/fa";
 
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api";
 import { AppContext } from "../Contexts/AppContext";
 import MyProducts from "../Pages/MyProducts";
 

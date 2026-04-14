@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import { useSearchParams } from "react-router";
 
 export default function useCategoryPage(filters = {}) {

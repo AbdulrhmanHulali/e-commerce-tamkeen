@@ -3,7 +3,7 @@ import { Row, Col, Card } from "react-bootstrap";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import "../styles/cartPage.css";
 
 export default function SavedForLater() {

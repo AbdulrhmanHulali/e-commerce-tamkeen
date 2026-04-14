@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { Button, Spinner } from "react-bootstrap";
 import { AppContext } from "../../Contexts/AppContext";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../../Config/api"; 
 
 export default function ProductInfo({ product, onVariantChange }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

@@ -12,7 +12,7 @@ import {
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { AppContext } from "../Contexts/AppContext";
 import { useNavigate } from "react-router";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import mockData from "../../public/data/mockdata.json";
 import "../styles/terms.css";
 

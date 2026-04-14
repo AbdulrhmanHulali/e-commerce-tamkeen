@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { api_config } from "../../Config/API";
+import { api_config } from "../Config/api";
 import { AppContext } from "../Contexts/AppContext";
 
 export default function useHomeData() {

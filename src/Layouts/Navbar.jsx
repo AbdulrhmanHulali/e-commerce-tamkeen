@@ -34,7 +34,7 @@ import {
 import { Link, useLocation, useNavigate, useSearchParams } from "react-router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import { AppContext } from "../Contexts/AppContext";
 import logo from "../assets/images/logo.svg";
 import "./navbar.css";

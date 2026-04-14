@@ -18,7 +18,7 @@ import {
   FaPencilAlt,
 } from "react-icons/fa";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api";
 import "../styles/myProducts.css";
 
 export default function MyProducts() {

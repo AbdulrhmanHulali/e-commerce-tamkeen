@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight, FaBoxOpen } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
 import OrderCard from "../Components/OrderCard";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

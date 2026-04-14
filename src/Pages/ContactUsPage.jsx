@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import "../styles/contactus.css";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import { AppContext } from "../Contexts/AppContext";
 
 export default function ContactUsPage() {

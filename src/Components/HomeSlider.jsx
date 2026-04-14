@@ -3,7 +3,7 @@ import { AppContext } from "../Contexts/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Container, Spinner } from "react-bootstrap";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import mockData from "../../public/data/mockdata.json";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AppContext = createContext();
 

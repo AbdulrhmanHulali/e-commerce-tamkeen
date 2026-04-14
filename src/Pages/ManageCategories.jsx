@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { FaPlus, FaPencilAlt, FaTrash, FaImage, FaTags } from "react-icons/fa";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../../Config/API";
+import { api_config } from "../Config/api";
 
 export default function ManageCategories() {
   const { lang } = useContext(AppContext);

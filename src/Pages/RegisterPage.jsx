@@ -12,7 +12,7 @@ import {
   FiCamera,
 } from "react-icons/fi";
 
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api";
 import "../styles/register.css";
 
 export default function RegisterPage() {

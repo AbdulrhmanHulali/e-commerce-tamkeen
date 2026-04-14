@@ -10,7 +10,7 @@ import NewsletterSection from "../Components/NewsletterSection";
 import HeroSection from "../Components/HeroSection";
 import HomeSlider from "../Components/HomeSlider";
 import "../styles/homePage.css";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api"; 
 import { AppContext } from "../Contexts/AppContext";
 
 export default function HomePage() {

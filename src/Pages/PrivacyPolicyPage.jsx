@@ -11,7 +11,7 @@ import {
 } from "react-icons/fi";
 import { useNavigate } from "react-router";
 import { AppContext } from "../Contexts/AppContext";
-import { api_config } from "../../Config/API"; 
+import { api_config } from "../Config/api";
 import "../index.css";
 import "../styles/privacypolicy.css";
 import mockData from "../../public/data/mockdata.json";
